@@ -26,11 +26,12 @@ Enter passphrase (empty for no passphrase): [Type a passphrase]
 
  Enter same passphrase again: [Type passphrase again]
 
-2. eval "$(ssh-agent -s)"
+2. `eval "$(ssh-agent -s)"`
 
 3. 安装xclip复制rsa
 
 `sudo apt-get install xclip`
+
 `xclip -sel clip < ~/.ssh/id_rsa.pub`
 
 事实上可以去那个目录下用vim复制出来
